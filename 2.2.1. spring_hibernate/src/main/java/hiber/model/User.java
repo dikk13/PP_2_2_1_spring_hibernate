@@ -10,6 +10,10 @@ public class User {
    @GeneratedValue(strategy = GenerationType.IDENTITY)
    private Long id;
 
+   @OneToOne(fetch = FetchType.LAZY, optional = false, cascade = CascadeType.PERSIST)
+   @JoinColumn(unique = true)
+   private Car userCar;
+
    @Column(name = "name")
    private String firstName;
 

@@ -15,6 +15,9 @@ public class Car {
     @Column
     private int series;
 
+    @OneToOne(mappedBy = "userCar")
+    private User user;
+
     public Car(String model, int series) {
         this.model = model;
         this.series = series;

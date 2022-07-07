@@ -35,15 +35,9 @@ public class MainApp {
 
       List<User> users = userService.listUsers();
       for (User user : users) {
-         System.out.println("Id = "+user.getId());
-         System.out.println("First Name = "+user.getFirstName());
-         System.out.println("Last Name = "+user.getLastName());
-         System.out.println("Email = "+user.getEmail());
-         System.out.println("Car Model = " + user.getUserCar().getModel());
-         System.out.println("Car Series = " + user.getUserCar().getSeries());
-         System.out.println();
+         System.out.println(user);
       }
-
+      System.out.println(userService.getUserByModelAndSeries("2", 2));
       context.close();
    }
 }

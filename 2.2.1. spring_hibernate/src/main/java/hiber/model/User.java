@@ -42,13 +42,6 @@ public class User {
       this.email = email;
    }
 
-   public User(Car userCar, String firstName, String lastName, String email) {
-      this.userCar = userCar;
-      this.firstName = firstName;
-      this.lastName = lastName;
-      this.email = email;
-   }
-
    public int getId() {
       return id;
    }

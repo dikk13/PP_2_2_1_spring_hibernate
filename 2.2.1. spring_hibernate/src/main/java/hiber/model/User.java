@@ -1,5 +1,8 @@
 package hiber.model;
 
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Component;
+
 import javax.persistence.*;
 
 @Entity
@@ -32,7 +35,7 @@ public class User {
    private String email;
 
    public User() {}
-   
+
    public User(String firstName, String lastName, String email) {
       this.firstName = firstName;
       this.lastName = lastName;

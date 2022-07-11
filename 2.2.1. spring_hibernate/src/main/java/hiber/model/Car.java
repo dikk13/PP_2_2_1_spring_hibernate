@@ -12,10 +12,10 @@ public class Car {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private int id;
 
-    @Column
+    @Column(name = "name")
     private String model;
 
-    @Column
+    @Column(name = "series")
     private int series;
 
     @OneToOne(mappedBy = "userCar")
